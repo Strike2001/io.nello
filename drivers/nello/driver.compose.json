@@ -1,0 +1,31 @@
+{
+  "id": "nello",
+  "name": {
+    "en": "nello one"
+  },
+  "class": "lock",
+  "capabilities": [
+    "locked"
+  ],
+  "images": {
+    "large": "/drivers/nello/assets/images/large.png",
+    "small": "/drivers/nello/assets/images/small.png"
+  },
+	"pair": [
+		{
+			"id": "login_oauth2",
+			"template": "login_oauth2"
+		},
+		{
+			"id": "list_devices",
+			"template": "list_devices",
+			"navigation": {
+				"next": "add_devices"
+			}
+		},
+		{
+			"id": "add_devices",
+			"template": "add_devices"
+		}
+	]
+}
