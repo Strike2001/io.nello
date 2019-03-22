@@ -1,7 +1,7 @@
 {
   "id": "io.nello",
-  "version": "1.0.2",
-  "compatibility": ">=1.5.0",
+  "version": "1.1.0",
+  "compatibility": ">=2.0.0",
   "brandColor": "#00E590",
   "sdk": 2,
   "name": {
@@ -21,6 +21,62 @@
   "author": {
     "name": "Athom B.V.",
     "email": "support@athom.com"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "webhook_swipe",
+        "title": {
+          "en": "Unlocked in the nello app"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=nello"
+          }
+        ]
+      },
+      {
+        "id": "webhook_geo",
+        "title": {
+          "en": "Unlocked because closeby"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=nello"
+          }
+        ]
+      },
+      {
+        "id": "webhook_tw",
+        "title": {
+          "en": "Unlocked because of time window"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=nello"
+          }
+        ]
+      },
+      {
+        "id": "webhook_deny",
+        "title": {
+          "en": "Doorbell rang but not unlocked"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=nello"
+          }
+        ]
+      }
+    ]
   },
   "drivers": [
     {

@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "id": "webhook_swipe",
+      "title": {
+        "en": "Unlocked in the nello app"
+      }
+    },
+    {
+      "id": "webhook_geo",
+      "title": {
+        "en": "Unlocked because closeby"
+      }
+    },
+    {
+      "id": "webhook_tw",
+      "title": {
+        "en": "Unlocked because of time window"
+      }
+    },
+    {
+      "id": "webhook_deny",
+      "title": {
+        "en": "Doorbell rang but not unlocked"
+      }
+    }
+  ]
+}
